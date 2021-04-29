@@ -42,23 +42,16 @@
              ?>
           <h4>5. Mostrar la suma de los números de 1 a 20</h4>
             <?php
-              $suma=0;
-              for ($i=1; $i <=20 ; $i++) {
-                $suma += $i;
-                echo "suma: " . ($suma). "<br/> ";
+              $auxSuma=0;
+              for ($i=0; $i <= 20; $i++) {
+              echo  "$auxSuma + $i = ". ($auxSuma += $i)."<br/>";
               }
              ?>
           <h4>6. Mostrar la suma de números pares de 1 a 20.</h4>
             <?php
-              $aux=2;
-              for ($i=0; $i <= 20; $i++) {
-               $aux += $i;
-               echo "$aux + $i";
-               if ($aux%2==0) {
-                 echo ($aux). "<br/> ";
-               }
-
-
+              $auxSuma=2;
+                for ($i=2; $i <= 20; $i++) {   
+                echo  "$auxSuma + $i = ". ($auxSuma += ($i++))."<br/>";
              }
 
 
